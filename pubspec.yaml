@@ -1,0 +1,38 @@
+name: flutter_router
+description: A new Flutter project.
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner:
+  source_gen:
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.skyqi.flutter_router
+        pluginClass: FlutterRouterPlugin
+      ios:
+        pluginClass: FlutterRouterPlugin
+      macos:
+        pluginClass: FlutterRouterPlugin
+      windows:
+        pluginClass: FlutterRouterPluginCApi
+      web:
+        pluginClass: FlutterRouterWeb
+        fileName: flutter_router_web.dart
